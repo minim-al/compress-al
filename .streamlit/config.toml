@@ -1,0 +1,7 @@
+[server]
+port = 8510
+baseUrlPath = "compress"
+maxUploadSize = 20
+
+[browser]
+gatherUsageStats = false
