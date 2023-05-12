@@ -11,7 +11,7 @@ import streamlit as st
 
 
 RANDOM_STATE = 42  # fixed random state for replicating results
-MAX_N_CLUSTERS = 128  # locked to decrease the load on the server (only used if number of image's unique colors >= 128)
+MAX_N_CLUSTERS = 128  # locked to decrease the load on the server (only used if img_n_colors >= MAX_N_CLUSTERS)
 SAMPLING_DIVISOR = 5  # the higher the faster, but less accurate
 
 
