@@ -18,7 +18,7 @@ git clone https://github.com/minim-al/compress-al.git
 cd compress-al
 ```
 
-#### 2. Install the packages listed inside `requirements.txt` (Using a virtual environment is recommended)
+#### 2. Install the packages listed inside `requirements.txt` (using a virtual environment is recommended)
 - With a virtual environment using `pipenv`
 ```
 pipenv shell
@@ -33,3 +33,9 @@ pip install -r requirements.txt
 ```
 streamlit run Intro.py
 ```
+> Note: If you use a virtual environment, you obviously have to activate it before running the application.
+> `pipenv` environments can be activated by running:
+> ```
+> pipenv shell
+> ```
+> If you are following the setup steps you will have already activated the virtual environment in step 2, but will need to do so again if you leave it.
