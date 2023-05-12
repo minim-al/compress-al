@@ -3,7 +3,6 @@ from time import time
 import io
 
 import numpy as np
-import plotly.express as px
 from sklearn.cluster import KMeans
 from sklearn.datasets import load_sample_image
 from sklearn.utils import shuffle
@@ -28,7 +27,9 @@ hide_streamlit_style = """
             </style>
             """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
 st.markdown("# compress-al")
+
 img_buffer = st.file_uploader("Upload an image",
                               accept_multiple_files=False,
                               type=["png", "jpg", "jpeg"])
@@ -116,19 +117,4 @@ if img_buffer is not None:
             file_name=f"compressed-{img_name}",
             mime=f"image/{img_format}"
     )
-
-    #t0 = time()
-    #img_array_compressed = compress_image(kmeans.cluster_centers_, labels, w, h, d)
-    #fig = (px.imshow(img_array_compressed)
-    #    .update_xaxes(showticklabels = False, visible=False)
-    #    .update_yaxes(showticklabels = False, visible=False)
-    #    .update_layout(
-    #        margin=dict(l=0,r=0,b=0,t=0),
-    #        paper_bgcolor="Black"
-    #        )
-    #)
-    #fig.write_image("compressed_image.png", engine="kaleido", width=h, height=w)
-    #img_compressed = Image.open('compressed_image.png')
-    #st.image(img_compressed)
-    #print(f"Figure write image done in {time() - t0:0.3f}s.")
-
+ 
