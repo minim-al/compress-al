@@ -99,8 +99,8 @@ if img_buffer is not None:
     right_column.write(f"Original ({img_n_colors} colors):")
     right_column.image(img_raw)
     
-    left_column.write(f"Compressed ({n_clusters} colors):")
     # showing compressed image
+    left_column.write(f"Compressed ({n_clusters} colors):")
     left_column.image(img_compressed, output_format=img_format)
 
     # ended timer and writing results
