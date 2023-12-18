@@ -12,7 +12,7 @@ Choose how many colors you want, and let compress-al do the magic!
 
 ## Setup
 
-#### 1. Download the repositroy to your sever
+#### 1. Download the repositroy to your server
 ```
 git clone https://github.com/minim-al/compress-al.git
 cd compress-al
